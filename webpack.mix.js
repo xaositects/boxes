@@ -1,5 +1,5 @@
-const { mix } = require('laravel-mix');
-
+const {mix} = require('laravel-mix');
+require('laravel-elixir-vueify');
 /*
  |--------------------------------------------------------------------------
  | Mix Asset Management
@@ -10,6 +10,8 @@ const { mix } = require('laravel-mix');
  | file for the application as well as bundling up all the JS files.
  |
  */
-
-mix.js('resources/assets/js/app.js', 'public/js')
-   .sass('resources/assets/sass/app.scss', 'public/css');
+elixer(function (mix) {
+    mix.js('resources/assets/js/app.js', 'public/js').extract(['vue'])
+            .sass('resources/assets/sass/app.scss', 'public/css');
+    mix.browserify('app.js');
+});

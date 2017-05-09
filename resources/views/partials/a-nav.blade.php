@@ -1,7 +1,7 @@
 
         <ul class="dropdown-content" id="user_options_mob">
             <li>
-                <a href="/siteadmin">Site Admin<i class="material-icons right">settings</i></a>
+                <a href="/site-admin">Site Admin<i class="material-icons right">settings</i></a>
             </li>
             <li>
                 <a href="/files">Files <i class="material-icons right">photo_library</i></a>
@@ -20,7 +20,7 @@
         </ul>
         <ul class="dropdown-content" id="user_options">
             <li>
-                <a href="/siteadmin">Site Admin<i class="material-icons right">settings</i></a>
+                <a href="/site-admin">Site Admin<i class="material-icons right">settings</i></a>
             </li>
             <li>
                 <a href="/files">Files&nbsp;<i class="material-icons right">photo_library</i></a>

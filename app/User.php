@@ -35,5 +35,9 @@ class User extends Authenticatable
     public function profiles() {
         return $this->hasMany('Boxes\UserProfile');
     }
+    
+    public function isAdmin() {
+        return $this->is_admin;
+    }
 
 }

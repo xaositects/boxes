@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class UserProfile extends Model
 {
+    protected $fillable = ['firstname', 'lastname', 'users_id', 'user_profile_types_id'];
     public function user()
     {
         return $this->belongsTo('Boxes\User');
